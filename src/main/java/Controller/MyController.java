@@ -22,7 +22,10 @@ public class MyController {
 	public String get() {
 		return "welcome";
 	}
-
+@RequestMapping("/hellouser")
+	public String getuser() {
+		return "welcome user";
+	}
 	@RequestMapping(value = "CreateProduct")
 	public ModelAndView show() {
 
